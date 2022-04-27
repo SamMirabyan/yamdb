@@ -7,16 +7,15 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
-
 from reviews.models import Category, Genre, Review, Title
+
 from .custom_filters import CustomFilter
-from .permission import (AdminOnly, AuthorOrStaffOrReadOnly,
-                         ReadOnly)
+from .permission import AdminOnly, AuthorOrStaffOrReadOnly, ReadOnly
 from .serializers import (AdminUserSerializer, CategorySerializer,
-                          CommentSerializer, GenreSerializer,
-                          ObtainTokenSerializer, ListRetrieveReviewSerializer,
-                          CreateUpdateDestroyReviewSerializer,
-                          TitleWriteSerializer, TitleReadSerializer,
+                          CommentSerializer,
+                          CreateUpdateDestroyReviewSerializer, GenreSerializer,
+                          ListRetrieveReviewSerializer, ObtainTokenSerializer,
+                          TitleReadSerializer, TitleWriteSerializer,
                           UserProfileSerializer, UserSignUpSerializer)
 from .utils import send_confirmation_email
 

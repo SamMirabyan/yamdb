@@ -1,9 +1,9 @@
 import csv
 
-from django.core.management.base import BaseCommand
 from django.apps import apps
+from django.core.management.base import BaseCommand
 
-from ._common import add_genres, MODELS, PATH
+from ._common import MODELS, PATH, add_genres
 
 
 class Command(BaseCommand):

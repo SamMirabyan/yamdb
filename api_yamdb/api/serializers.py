@@ -1,7 +1,7 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
-
 from reviews.models import Category, Comment, Genre, Review, Title
+
 from .custom_fields import CurrentTitleDefault
 
 User = get_user_model()

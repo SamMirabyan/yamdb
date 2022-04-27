@@ -1,6 +1,7 @@
 import os
 from datetime import timedelta
-from decouple import config, Csv
+
+from decouple import Csv, config
 
 # Use this if no .env file provided
 ENV_DEFAULTS = {
