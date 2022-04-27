@@ -55,6 +55,6 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v2
         with:
-          entrypoint: /api_yamdb/
+          entrypoint: ../api_yamdb/
           push: true
           tags: nontechlearndev/yambd_web:latest
