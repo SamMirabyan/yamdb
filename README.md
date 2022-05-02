@@ -1,6 +1,9 @@
 # Тестовый workflow @_github actions_
 #### на примере проекта yamdb_final
 
+__IP сервера с рабочим приложением:__
+***51.250.21.73***
+
 ![yamdb_final workflow](https://github.com/sammirabyan/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 #### Что входит в workflow:
